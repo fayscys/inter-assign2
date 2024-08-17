@@ -1,1 +1,140 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import Angular Material theme */
+@import '../node_modules/@angular/material/prebuilt-themes/cyan-orange.css';
+
+/* Import Bootstrap */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #333;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  height: .5rem;
+  width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cyan;
+  border-radius: 5rem;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: cyan black;
+}
+
+/* Angular Material Toolbar styles */
+mat-toolbar {
+  margin-bottom: 20px;
+}
+
+/* Angular Material Card styles */
+mat-card {
+  display: center;
+}
+
+mat-card-title {
+  color: white;
+}
+
+mat-card-title:hover {
+  text-decoration: underline;
+  color: cyan;
+}
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  padding-left: 80px;
+}
+
+nav ul li a:hover,
+span:hover,
+p a:hover {
+  text-decoration: underline;
+  color: cyan;
+}
+
+/* Section styles */
+section {
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 800px;
+  border: 1px solid cyan;
+  background: black;
+  border-radius: 10px;
+}
+
+/* Text styles */
+p {
+  color: white;
+
+}
+
+span {
+  padding-left: 200px;
+  padding-top: 90px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 420px) {
+  section {
+    padding: 1em;
+    margin: 0.5em auto;
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  section a, span {
+    width: 100%;
+    text-align: center;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+}
+
